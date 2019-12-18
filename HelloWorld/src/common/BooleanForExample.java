@@ -24,5 +24,6 @@ public static void main(String[] args) {
 		System.out.println("D");
 	else
 		System.out.println("F");
+ 
 }
 }
