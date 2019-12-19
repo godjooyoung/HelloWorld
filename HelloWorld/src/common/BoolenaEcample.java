@@ -14,5 +14,7 @@ public static void main(String[] args) {
 	else	
 	System.out.println(var1 + "=> 거짓일 경우에");
 	}
+	
+	//Push해보자 푸시푸시
 }
 }
