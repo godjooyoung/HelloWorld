@@ -22,8 +22,8 @@ public class ArrayForExample {
 			hab = hab + ArrayFor[a];
 		}
 		System.out.println("배열의 총 합은  → " + hab);
-		
-		avg = hab / ArrayFor.length ;
-		System.out.println("평균은 → " +  avg);
+
+		avg = hab / ArrayFor.length;
+		System.out.println("평균은 → " + avg);
 	}
 }

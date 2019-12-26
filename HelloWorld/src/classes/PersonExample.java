@@ -49,9 +49,9 @@ public class PersonExample {
 			for (Person xxx : perArray) {
 				if (ser.equals(xxx.person_name))
 					xxx.p_i();
-				
+
 			}
-			
+
 		}
 
 	}

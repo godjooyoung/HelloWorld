@@ -16,7 +16,7 @@ public class ArrayExample {
 
 		int sum2 = 0;
 		for (int y = 0; y <= 4; y = y + 2) {
-			sum2 = sum2 + intAry[y]; 		// 인트배열중에서 특정 위치만 더해보자
+			sum2 = sum2 + intAry[y]; // 인트배열중에서 특정 위치만 더해보자
 
 		}
 
@@ -30,7 +30,7 @@ public class ArrayExample {
 
 		for (int i = 0; i < 6; i++)
 			System.out.println("배열을 반복문으로 읽어 왔습니다 :" + strAry[i]);
-			
+
 	}
 }
 

@@ -46,13 +46,13 @@ public class ForArrayExample {
 
 		}
 		int dice2 = 1;
-		while (dice2 !=6 ) {
+		while (dice2 != 6) {
 			dice2 = (int) (Math.random() * 6) + 1;
-			System.out.println("탈출실패  : " +dice2);
-			if(dice2 == 6) {
-				System.out.println("6이 나와서 탈출했습니다. : " +dice2 );
+			System.out.println("탈출실패  : " + dice2);
+			if (dice2 == 6) {
+				System.out.println("6이 나와서 탈출했습니다. : " + dice2);
 				break;
 			}
+		}
 	}
-}
 }

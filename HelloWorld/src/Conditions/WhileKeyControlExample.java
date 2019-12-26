@@ -1,7 +1,7 @@
 package Conditions;
 
 public class WhileKeyControlExample {
-	public static void main(String[] args) throws Exception{
+	public static void main(String[] args) throws Exception {
 		boolean run = true;
 		int speed = 0;
 		int keycode = 0;

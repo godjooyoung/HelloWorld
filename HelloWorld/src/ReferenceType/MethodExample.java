@@ -8,7 +8,7 @@ public class MethodExample {
 		System.out.println("div1은 " + div1 + " 입니다.");
 		String name1 = printResult("신주영");
 		System.out.println(name1);
-		double gyesangi = calculator(4,3,"%");
+		double gyesangi = calculator(4, 3, "%");
 		System.out.println("계산기 결과는 : " + gyesangi);
 	}
 
@@ -36,30 +36,27 @@ public class MethodExample {
 
 	public static double calculator(int i, int j, String cal) {
 		double result = 0;
-		
+
 		switch (cal) {
-		case "*" :
-			result = (double)i*j;
+		case "*":
+			result = (double) i * j;
 			break;
-		case "-" :
-			result = (double)i-j;
+		case "-":
+			result = (double) i - j;
 			break;
-		case "+" : 
-			result = (double)i+j;
+		case "+":
+			result = (double) i + j;
 			break;
-		case "/" : 
-			result = (double)i/j;
+		case "/":
+			result = (double) i / j;
 			break;
-			
-		case "%" :
-			result = (double)i%j;
+
+		case "%":
+			result = (double) i % j;
 			break;
 		}
 		return result;
-		
-			}
-				
+
+	}
 
 }
-
-
