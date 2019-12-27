@@ -31,14 +31,21 @@ public static void main(String[] args) {
 		for (int i=0; i<3; i++) {
 			int strike = 0;
 			int ball = 0;
+			int ct=0;
 		if (users[i] == secret[i]) {
 		
 			strike++;
-			System.out.println("스트라이크! " + strike);
+			System.out.println(strike + "스트라이크 !");
+		}else if(users[0] == secret[i]) {
+			ball++;
+			System.out.println(ball + "볼!");
+		}else if(users[1] == secret[i]) {
+			ball++;
+			System.out.println(ball + "볼!");
+		}else if(users[2] == secret[i]) {
+			ball++;
+			System.out.println(ball + "볼!");
 		}
-	
-	
-	
 }
 }
 }
