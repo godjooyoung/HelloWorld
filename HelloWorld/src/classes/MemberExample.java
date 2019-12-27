@@ -33,7 +33,29 @@ public class MemberExample {
 			System.out.println("프로그램 종료");
 		}
 	}
+	public void createMember() {
+		Member mem = new Member();
+		System.out.println("이름을 입력하세요 : ");
+		String name = sc.nextLine();
+		mem.setName(name);
+		
+		System.out.println("ID를 입력하세요. : ");
+		String id = sc.nextLine();
+		mem.setId(id);
 
+		System.out.println("암호를 입력하세요 : ");
+		String password = sc.nextLine();
+		mem.setPassword(password);
+
+		// System.out.println("나이를 입력하세요 : ");
+		// int age = sc.nextInt();
+		// mem.setAge(age);
+
+		for (int i = 0; i < memberAry.length; i++) {
+			if (memberAry[i] == null) {
+				memberAry[i] = mem;
+				break;
+			}
 	public void serchMember() {
 		System.out.println("ID 입력 > ");
 		String inputId = sc.nextLine();
@@ -64,29 +86,7 @@ public class MemberExample {
 		}
 	}
 
-	public void createMember() {
-		Member mem = new Member();
-		System.out.println("이름을 입력하세요 : ");
-		String name = sc.nextLine();
-		mem.setName(name);
-		
-		System.out.println("ID를 입력하세요. : ");
-		String id = sc.nextLine();
-		mem.setId(id);
-
-		System.out.println("암호를 입력하세요 : ");
-		String password = sc.nextLine();
-		mem.setPassword(password);
-
-		// System.out.println("나이를 입력하세요 : ");
-		// int age = sc.nextInt();
-		// mem.setAge(age);
-
-		for (int i = 0; i < memberAry.length; i++) {
-			if (memberAry[i] == null) {
-				memberAry[i] = mem;
-				break;
-			}
+	
 		}
 
 	}
