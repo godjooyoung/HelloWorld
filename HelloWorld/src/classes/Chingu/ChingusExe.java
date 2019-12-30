@@ -13,7 +13,7 @@ public class ChingusExe {
 			System.out.println("━━━━━━━━━━━━━━━━━━━━━━");
 			System.out.println("1.입력    2.검색    3.친구목록    4.종료");
 			System.out.println("━━━━━━━━━━━━━━━━━━━━━━");
-			System.out.println("메뉴를 선택해 주세요 > ");
+			System.out.println("메뉴를 선택해 주세요 >>");
 
 			int menuNo = scanner.nextInt();
 			scanner.nextLine();
