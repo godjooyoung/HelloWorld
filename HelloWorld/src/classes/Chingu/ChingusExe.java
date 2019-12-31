@@ -2,10 +2,14 @@ package classes.Chingu;
 
 import java.util.Scanner;
 
+
+
+
 public class ChingusExe {
 
-	private static ChingusExe[] chinArr = new ChingusExe[100];
-	private static Scanner scanner = new Scanner(System.in);
+	static Friend[] chinArr = new Friend[100];
+	static Friend baguni = null;
+	static Scanner scanner = new Scanner(System.in);
 
 	public static void main(String[] args) {
 		boolean run = true;
@@ -40,48 +44,46 @@ public class ChingusExe {
 		scanner.nextLine();
 		if (fNo == 1) {
 			System.out.println("친구 이름을 입력해주세요. >> ");
-			String fName = scanner.nextLine();
+			String name = scanner.nextLine();
 
 			System.out.println("친구 연락처를 입력해주세요. >> ");
-			String fPhone = scanner.nextLine();
+			String phone = scanner.nextLine();
 
-			ChingusExe inputChingu = new ChingusExe();
+			baguni = new Friend (name, phone);
 
 			System.out.println("저장되었습니다.");
 
 		} else if (fNo == 2) {
 			System.out.println("대학친구 이름을 입력해주세요. >> ");
-			String fName = scanner.nextLine();
+			String name = scanner.nextLine();
 			System.out.println("대학친구 연락처를 입력해주세요. >> ");
-			String fPhone = scanner.nextLine();
+			String phone = scanner.nextLine();
 			System.out.println("대학친구 학교를 입력해주세요. >> ");
-			String fUniv = scanner.nextLine();
+			String univ = scanner.nextLine();
 			System.out.println("대학친구 전공을 입력해주세요. >> ");
-			String fMajor = scanner.nextLine();
+			String major = scanner.nextLine();
 
-			ChingusExe inputChingu = new ChingusExe(fName, fPhone, fUniv, fMajor);
+			baguni = new UnivFriend (name, phone, univ, major);
 
 			System.out.println("저장되었습니다.");
 		} else if (fNo == 3) {
 			System.out.println("회사친구 이름을 입력해주세요. >> ");
-			String fName = scanner.nextLine();
+			String name = scanner.nextLine();
 			System.out.println("회사친구 연락처를 입력해주세요. >> ");
-			String fPhone = scanner.nextLine();
+			String phone = scanner.nextLine();
 			System.out.println("회사친구의 회사를 입력해주세요. >> ");
-			String fCompany = scanner.nextLine();
+			String company = scanner.nextLine();
 			System.out.println("회사친구의 부서를 입력해주세요. >> ");
-			String fDept = scanner.nextLine();
-			ChingusExe inputChingu = new ChingusExe(fName, fPhone, fCompany, fDept);
+			String dept = scanner.nextLine();
+			baguni = new ComFriend (name, phone, company, dept);
 
 			System.out.println("저장되었습니다.");
 		}
 
 		for (
-
 				int i = 0; i < chinArr.length; i++) {
 			if (chinArr[i] == null) {
-				ChingusExe inputChingu = null;
-				chinArr[i] = inputChingu;
+			chinArr[i] = baguni;
 				break;
 
 			}
@@ -89,9 +91,25 @@ public class ChingusExe {
 	}
 
 	private static void chinguSerch() {
+
+		System.out.println("검색할 이름을 입력하세요 >> ");
+		String inputKeyword = scanner.nextLine();
+		for (Friend a : chinArr) {
+			if (a != null) {
+				if (inputKeyword.equals(a.getName())) {
+					System.out.println("친구가 검색되었습니다.");
+					a.introduce();
+				}
+			}
+		}
+		
 	}
 
 	private static void chinguList() {
-
+		for (Friend aa : chinArr) {
+			if (aa != null) {
+				aa.introduce();
+			}
 	}
+}
 }
