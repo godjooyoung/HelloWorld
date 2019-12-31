@@ -8,6 +8,9 @@ public Friend(String name, String phone) {
 	this.name = name;
 	this.phone = phone;
 }
+public Friend() {
+	
+}
 public String getName() {
 	return name;
 }

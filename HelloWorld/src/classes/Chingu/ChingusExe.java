@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class ChingusExe {
 
-	static Friend[] chinArr = new Friend[100];
+	static Friend[] chinArr = new Friend[200];
 	static Friend baguni = null;
 	static Scanner scanner = new Scanner(System.in);
 
@@ -80,8 +80,7 @@ public class ChingusExe {
 			System.out.println("저장되었습니다.");
 		}
 
-		for (
-				int i = 0; i < chinArr.length; i++) {
+		for (int i = 0; i < chinArr.length; i++) {
 			if (chinArr[i] == null) {
 			chinArr[i] = baguni;
 				break;
